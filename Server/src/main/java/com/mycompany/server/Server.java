@@ -21,7 +21,7 @@ public class Server {
         int choice = scn.nextInt();
         switch (choice) {
             case 1:
-                receiveImage(2001, "C:/Users/VUSAL/Downloads/tcp/Server/vusal.jpg");
+                receiveImage(2001, "/path/to/store/image.jpg");
                 break;
             case 2:
                 receiveMessage(2001);
@@ -30,7 +30,6 @@ public class Server {
                 System.out.println("Incorrect choice!");
                 break;
         }
-        //"/path/to/store/image.jpg"
     }
 
     @SneakyThrows
@@ -52,9 +51,6 @@ public class Server {
 
         FileUtility.writeBytes(arr, imagePath);
         System.out.println("\nServer: The image was successfully received from the client");
-
-        //"C:/Users/VUSAL/Downloads/tcp/Client/2020_01_23 21_57 Office Lens.jpg"
-        //"C:/Users/VUSAL/Downloads/tcp/Server/vusal.jpg"
     }
 
     @SneakyThrows

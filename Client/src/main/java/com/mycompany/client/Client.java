@@ -18,7 +18,7 @@ public class Client {
         int choice = scn.nextInt();
         switch (choice) {
             case 1:
-                sendImage("localhost", 2001, "C:/Users/VUSAL/Downloads/tcp/Client/2020_01_23 21_57 Office Lens.jpg");
+                sendImage("localhost", 2001, "/path/to/your/image.jpg");
                 break;
             case 2:
                 sendMessage("localhost", 2001);
